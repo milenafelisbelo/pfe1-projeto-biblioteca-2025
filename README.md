@@ -142,10 +142,10 @@ Desenvolver as funcionalidades conforme requisitos funcionais e não funcionais,
 
 |Web|Mobile|
 |-|-|
-|![Wireframe01](./wireframes/wireframe01.png)|![Wireframe02](./wireframes/wireframe02.png)|
-|![Wireframe03](./wireframes/wireframe03.png)|![Wireframe04](./wireframes/wireframe04.png)|
-|![Wireframe05](./wireframes/wireframe05.png)|![Wireframe06](./wireframes/wireframe06.png)|
-
+|![Wireframe01](./wireframes/wireframe1.png)|![Wireframe02](./wireframes/wireframe2.png)|
+|![Wireframe03](./wireframes/wireframe3.png)|![Wireframe04](./wireframes/wireframe4.png)|
+|![Wireframe05](./wireframes/wireframe5.png)|![Wireframe06](./wireframes/wireframe6.png)|
+|![Wireframe07](./wireframes/wireframe7.png)|![Wireframe08](./wireframes/wireframe6.png)|
 
 #### Obs: Os wireframes são apenas sugestões, você pode criar o layout que desejar, desde que atenda aos requisitos funcionais e não funcionais.
 Use sua criatividade e faça um layout bonito e funcional.
