@@ -1,0 +1,282 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D9C6EB;
+    color: #4B2C73;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #A084CA;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input[type="text"] {
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F2E6FF;
+    color: #4B2C73;
+    font-weight: bold;
+}
+
+header button {
+    background-color: #B497D6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #8C6BB1;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F2E6FF;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #4B2C73;
+}
+
+h2 {
+    border-bottom: 2px solid #B497D6;
+    padding-bottom: 0.5rem;
+}
+
+/* Container de Livros */
+.livros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Card de Livro */
+.livro-card {
+    background: #CBB3E9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    height: 420px; /* altura ideal fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    background: #B497D6;
+}
+
+/* Imagem do Livro */
+.livro-imagem {
+    height: 180px;
+    background: #A084CA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Informações do Livro */
+.livro-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.livro-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4B2C73;
+}
+
+.livro-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #4B2C73;
+}
+
+/* Botão de Detalhes */
+.btn-detalhes {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.6rem 1.2rem;
+    background: transparent;
+    border: 1px solid #4B2C73;
+    color: #4B2C73;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-detalhes:hover {
+    background: #B497D6;
+    color: white;
+}
+
+/* Tabela */
+table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #F2E6FF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #B497D6;
+    text-align: left;
+}
+
+th {
+    background-color: #A084CA;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #EAD8FB;
+}
+
+tr:hover {
+    background-color: #D9C6EB;
+}
+
+/* Botões da Tabela */
+button.devolver, button.excluir {
+    background-color: #A084CA;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.devolver:hover, button.excluir:hover {
+    background-color: #8C6BB1;
+}
+
+/* Modal (arrumado para aparecer inteiro e centralizado) */
+.modal {
+    display: none; /* por padrão escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background: #F2E6FF;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    color: #4B2C73;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Fechar Modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4B2C73;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #8C6BB1;
+}
+
+/* Animação de Entrada do Modal */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Rodapé */
+footer {
+    background-color: #A084CA;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .livros-container {
+        grid-template-columns: 1fr;
+    }
+}

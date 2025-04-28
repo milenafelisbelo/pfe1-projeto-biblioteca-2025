@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boblioteca ACME</title>
-    <link rel="stylesheet" href="../styles/locacoes.css">
+    <title>Biblioteca ACME - Locações</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Biblioteca ACME</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Livros</a></li>
+                <li><a href="locacoes.html">Locações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Registros de Locações</h2>
+
+        <div class="filtro-barra">
+            <input type="text" id="filtro" placeholder="Filtrar Locações">
+            <button onclick="filtrar()">Filtrar</button>
+            <button onclick="abrirLivros()">Livros</button>
+        </div>
+
+        <table id="tabela-locacoes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Livro</th>
+                    <th>Leitor</th>
+                    <th>CPF</th>
+                    <th>Data</th>
+                    <th>Previsão</th>
+                    <th>Devolução</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/locacoes.js"></script>
 </body>
-<script src="../scripts/locacoes.js"></script>
+<footer> By Milena Felisbelo</footer>
 </html>
+
